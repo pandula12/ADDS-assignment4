@@ -2,7 +2,6 @@
 
 EfficientTruckloads::EfficientTruckloads()
 {
-    truckTable[0][0] = 0;
 }
 
 EfficientTruckloads::~EfficientTruckloads() {}

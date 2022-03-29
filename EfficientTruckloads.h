@@ -1,5 +1,6 @@
 #ifndef EFFICIENTTRUCKLOADS_H
 #define EFFICIENTTRUCKLOADS_H
+#include <map>
 
 class EfficientTruckloads {
     public:
@@ -7,7 +8,7 @@ class EfficientTruckloads {
     int numTrucks(int numCrates, int loadSize);
     ~EfficientTruckloads();
     private:
-    int truckTable[1000][1000];
+    std::map<int, std::map<int,int>> truckTable;
 };
 
 #endif
