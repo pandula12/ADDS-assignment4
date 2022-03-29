@@ -13,7 +13,13 @@ int main() {
     int numCrates;
     int loadSize;
     cin>>value>>letters>>numCrates>>loadSize;
-    cout<<Rev1.reverseDigit(value)<<" "<<Rev1.reverseString(letters)<<" "<<Truck1.numTrucks(numCrates, loadSize)<<" "<<effTruck1.numTrucks(numCrates, loadSize)<<endl;
+    if (!cin) {
+        cout<<Rev1.reverseDigit(value)<<" "<<Rev1.reverseString(letters)<<" "<<"ERROR"<<" "<<"ERROR"<<endl;
+    }
+    else {
+        cout<<Rev1.reverseDigit(value)<<" "<<Rev1.reverseString(letters)<<" "<<Truck1.numTrucks(numCrates, loadSize)<<" "<<effTruck1.numTrucks(numCrates, loadSize)<<endl;
+    }
+    
     
     return 0;
 }
